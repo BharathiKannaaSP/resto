@@ -1,4 +1,4 @@
-#NOTE : It doesn't have assets folder & .glb file.
+
 
 # Getting Started with Create React App
 
