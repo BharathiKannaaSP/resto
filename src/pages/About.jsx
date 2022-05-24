@@ -5,7 +5,15 @@ import Stand from '../components/Stand';
 import { OrbitControls } from '@react-three/drei';
 import { Suspense } from 'react';
 import Navbar from '../components/Navbar';
+
+
 function About() {
+  return (
+    <Name name='Megan' age='21'/>
+  )
+}
+
+function Name(props) {
   return (
     <div>
       <Navbar/>
@@ -25,8 +33,8 @@ function About() {
     </Canvas>
     <div style={{backgroundColor:'rgba(0,0,0,.4)'}}>
     <center>
-    <h1>Megan</h1>
-    <p style={{color:'gray'}}>Age-21</p>
+    <h1>{props.name}</h1>
+    <p style={{color:'gray'}}>{props.age}</p>
     <span style={{color:'#4FC'}}>7525 Mountainview St. New York, NY - 10040</span>
     </center>
     </div>
